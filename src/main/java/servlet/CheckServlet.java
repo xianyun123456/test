@@ -22,6 +22,10 @@ public class CheckServlet extends HttpServlet{
 			resp.getWriter().write(JSON.toJSONString(1));
 		}else{
 			resp.getWriter().write(JSON.toJSONString(0));
-		}
+		}//鲜云老师真帅
+	}
+	
+	public void a(){
+		System.out.println("鲜云老师真帅");
 	}
 }
