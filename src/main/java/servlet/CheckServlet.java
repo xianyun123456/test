@@ -28,4 +28,7 @@ public class CheckServlet extends HttpServlet{
 	public void a(){
 		System.out.println("鲜云老师真帅");
 	}
+	public void b(){
+		System.out.println("沐家泽还是有一点点眼光的");
+	}
 }
