@@ -1,0 +1,28 @@
+
+.inner{
+	background-color:yellow;
+	margin-left: 30%;
+	width:40%;
+	margin-top: 200px;
+}
+span{
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 50px;
+}
+input{
+	width:50%;
+	height:60px;
+	font-size:30px;
+}
+.sub{
+	margin-top:10px;
+	margin-bottom:10px;
+	width:30%;
+	margin-left: 15%;
+	background-color: pink;
+	font-size: 40px;
+}
+.error{
+	color:red;
+	font-size:20px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//给class为cd的节点绑定单击时间
+		$(".cd").click(function(){
+			var a = $(".ab").val();
+			document.cookie = "a="+escape(a);
+			window.location.href="de.html";
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="text" class="ab">
+	<input type="button" value="跳转" class="cd">
+</body>
+</html>

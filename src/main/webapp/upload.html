@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("input[type='button']").click(function(){
+			alert($("#ss").val());
+		});
+	});
+</script>
+</head>
+<body>
+	<form action="upload.do" method="post" enctype="multipart/form-data">
+		<input type="file" name="fileOne" ><br>
+		<input type="file" name="fileTwo"><br>
+		<input type="text" name="user" ><br>
+		<input type="submit" value="提交">
+	</form>
+	<input type="button" value="点">
+</body>
+</html>

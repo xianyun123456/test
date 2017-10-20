@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var text = checkByName("a");
+		$("span").text(text);
+	});
+	function checkByName(name){
+		var s = unescape(document.cookie);
+		alert(s)
+		var arr = s.split(";");//{"name=xx","s=uu",...}
+		for(var i=0;i<arr.length;i++){
+			var c = arr[i];//"name=xx"
+			var d = c.split("=");//{"name","xx"}
+			if(d[0].trim()==name){
+				return d[1];
+			}
+		}
+		return "";
+	}
+</script>
+</head>
+<body>
+	刚刚传过来的页面的值是:<span></span>
+</body>
+</html>
